@@ -6,19 +6,35 @@ const Tab = createBottomTabNavigator();
 export function MyTabs() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home">
+      <Tab.Screen name="Test1">
         {(props) => (
           <WebViewScreen
             {...props}
-            test={"Home"}
+            url={"https://google.com/"}
           />
         )}
       </Tab.Screen>
-      <Tab.Screen name="Settings">
+      <Tab.Screen name="Test2">
         {(props) => (
           <WebViewScreen
             {...props}
-            test={"Settings"}
+            url={"https://google.com/"}
+          />
+        )}
+      </Tab.Screen>
+      <Tab.Screen name="Test3">
+        {(props) => (
+          <WebViewScreen
+            {...props}
+            url={"https://google.com/"}
+          />
+        )}
+      </Tab.Screen>
+      <Tab.Screen name="Test4">
+        {(props) => (
+          <WebViewScreen
+            {...props}
+            url={"https://google.com/"}
           />
         )}
       </Tab.Screen>
